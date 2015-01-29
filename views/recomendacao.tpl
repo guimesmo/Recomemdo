@@ -33,6 +33,10 @@
             text-align:center;
             color:#F1F1F1;
         }
+        #logo {
+            max-width: 86px;
+            float:left;
+        }
         #rodape {
             text-align:center;
             width:100%;
@@ -41,7 +45,10 @@
 </head>
 <body>
     <div id="cabecalho">
-        <h1>Esse eu "recomemdo"</h1>
+        <img src="http://2.bp.blogspot.com/-0HTej3y4skQ/UBBJunR6cgI/AAAAAAAAAUY/IvrXf9xV1xI/s1600/joinha.png" id="logo">
+        <h1>
+            Esse eu "recomemdo"
+        </h1>
     </div>
     <div class="box">
         <img id="funcionario" src="{{imagem_url}}" alt="Funcionário exemplar">
