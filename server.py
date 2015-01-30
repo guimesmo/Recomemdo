@@ -4,10 +4,10 @@ from bottle import route, run, template
 from hashlib import md5
 import random
 
-recomendacoes = open('recomendacoes.txt', 'r').readlines()
+recomendacoes = open('arquivos/recomendacoes.txt', 'r').readlines()
 recomendacoes_hash = {md5(x).hexdigest(): x for x in recomendacoes}
-imagens = open('imagens.txt', 'r').readlines()
-informacoes_extras = open('informacoes_extras.txt', 'r').readlines()
+imagens = open('arquivos/imagens.txt', 'r').readlines()
+informacoes_extras = open('arquivos/informacoes_extras.txt', 'r').readlines()
 
 
 def imagem():
@@ -15,8 +15,7 @@ def imagem():
 
 
 def info():
-    return set(
-        [random.choice(informacoes_extras) for x in xrange(0, 5)])
+    return random.sample(informacoes_extras, 5)
 
 
 @route('/')
