@@ -4,9 +4,16 @@
     <title>Esse eu "recomemdo"</title>
     <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
     <style type="text/css">
-        body {
+        * {
             margin:0;
             padding:0;
+            border:0;
+        }
+        ul {
+            list-style: none;
+        }
+        body {
+
             font-family: 'PT Sans Narrow', sans-serif;
             background-color:#F1F1F1;
             color:#797979;
@@ -37,11 +44,9 @@
             max-width: 64px;
             position: absolute;
             left:15px;
-            top:15px;
+            top:0;
         }
         #rodape {
-            position:absolute;
-            bottom:20px;
             text-align:center;
             width:100%;
         }
@@ -57,7 +62,17 @@
     <div class="box">
         <img id="funcionario" src="{{imagem_url}}" alt="Funcionário exemplar">
         <h2>{{recomendacao}}</h2>
+        <br />
+        <br />
+        <br />
+        <h3>Outras informações</h3>
+        <ul>
+            % for informacao in informacoes:
+            <li>{{informacao}}</li>
+            % end
+        </ul>
         <a href="/recomendacao/{{hash_recomendacao}}">[ Permalink ]</a>
+        <br />
         <br />
         <div class="fb-share-button" data-href="http://recomendo.com.br/recomendacao/{{hash_recomendacao}}" data-layout="box_count"></div>
     </div>
