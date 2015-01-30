@@ -28,4 +28,4 @@ def recomendacao(hash_recomendacao):
     return template('recomendacao', **locals())
 
 
-run(host='0.0.0.0', port=8080)
+run(host='0.0.0.0', port=8080, reload=True)

@@ -34,8 +34,10 @@
             color:#F1F1F1;
         }
         #logo {
-            max-width: 86px;
-            float:left;
+            max-width: 64px;
+            position: absolute;
+            left:15px;
+            top:15px;
         }
         #rodape {
             position:absolute;
