@@ -38,6 +38,8 @@
             float:left;
         }
         #rodape {
+            position:absolute;
+            bottom:20px;
             text-align:center;
             width:100%;
         }
@@ -54,11 +56,21 @@
         <img id="funcionario" src="{{imagem_url}}" alt="Funcionário exemplar">
         <h2>{{recomendacao}}</h2>
         <a href="/recomendacao/{{hash_recomendacao}}">[ Permalink ]</a>
+        <br />
+        <div class="fb-share-button" data-href="http://recomendo.com.br/recomendacao/{{hash_recomendacao}}" data-layout="box_count"></div>
     </div>
     <div id="rodape">
         <small>
             Site fantasioso, humoristico e com caráter duvidável.
         </small>
     </div>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
 </body>
 </html>
