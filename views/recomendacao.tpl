@@ -18,20 +18,48 @@
             background-color:#F1F1F1;
             color:#797979;
         }
+        h1 {
+            margin-bottom: 15px;
+            font-size: 32px;
+
+
+        }
+        h2 {
+            font-size: 25px;
+            margin-bottom: 15px;
+            color: #696969;
+        }
+        h3 {
+            margin-bottom: 15px;
+        }
+        #descricao {
+            font-size: 22px;
+            font-style: italic;
+        }
         .box {
             margin-top:30px;
-            text-align:center;
-            width: 700px ;
+            text-align:left;
+            width: 960px ;
             margin-left: auto ;
             margin-right: auto ;
         }
         #funcionario {
+            wiidth: 200px;
+            height: 200px;
+            float: left;
+            margin: 0 15px 15px 0;
             -webkit-border-radius: 20px;
             -moz-border-radius: 20px;
             border-radius: 20px;
             -webkit-box-shadow: 0px 0px 13px 0px rgba(50, 50, 50, 0.75);
             -moz-box-shadow:    0px 0px 13px 0px rgba(50, 50, 50, 0.75);
             box-shadow:         0px 0px 13px 0px rgba(50, 50, 50, 0.75);
+        }
+        #outros {
+            text-align: left
+        }
+        #outros li{
+            margin-bottom: 5px;
         }
         #cabecalho {
             background: #616161;
@@ -50,6 +78,10 @@
             text-align:center;
             width:100%;
         }
+        #funcionario_principal {
+            overflow: hidden;
+            margin-bottom: 5px;
+        }
     </style>
 </head>
 <body>
@@ -60,24 +92,27 @@
         </h1>
     </div>
     <div class="box">
-        <img id="funcionario" src="{{imagem_url}}" alt="Funcionário exemplar">
-        <h2>{{recomendacao["descricao"]}}</h2>
-        <br />
-        <br />
-        <br />
-        <h3>Outras informações</h3>
-        <ul>
-            % for informacao in informacoes:
-            <li>{{informacao}}</li>
-            % end
-        </ul>
-        <a href="/recomendacao/{{hash_recomendacao}}">[ Permalink ]</a>
-        <br />
-        <br />
-        Não gostou dessa? Veja <a href="/nova_recomendacao">aqui</a> outra "recomemdação".
-        <br />
-        <br />
-        <div class="fb-share-button" data-href="http://recomendo.com.br/recomendacao/{{hash_recomendacao}}" data-layout="box_count"></div>
+        <div id="funcionario_principal">
+            <img id="funcionario" src="{{imagem_url}}" alt="Funcionário exemplar">
+            <h1>{{ recomendacao["nome"] }}</h1>
+            <h2>{{ recomendacao["profissao"] }}</h2>
+            <p id="descricao">{{recomendacao["descricao"]}}</p>
+        </div>
+        <div id="outros">
+            <h3>Outras informações</h3>
+            <ul>
+                % for informacao in informacoes:
+                <li>{{informacao}}</li>
+                % end
+            </ul>
+            <a href="/recomendacao/{{hash_recomendacao}}">[ Permalink ]</a>
+            <br />
+            <br />
+            Não gostou dessa? Veja <a href="/nova_recomendacao">aqui</a> outra "recomemdação".
+            <br />
+            <br />
+            <div class="fb-share-button" data-href="http://recomendo.com.br/recomendacao/{{hash_recomendacao}}" data-layout="box_count"></div>
+        </div>
     </div>
     <div id="rodape">
         <small>
