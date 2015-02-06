@@ -61,7 +61,7 @@
     </div>
     <div class="box">
         <img id="funcionario" src="{{imagem_url}}" alt="Funcionário exemplar">
-        <h2>{{recomendacao}}</h2>
+        <h2>{{recomendacao["descricao"]}}</h2>
         <br />
         <br />
         <br />
