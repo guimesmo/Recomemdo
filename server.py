@@ -17,14 +17,17 @@ def imagem():
 def info():
     return random.sample(informacoes_extras, 5)
 
-
-@route('/')
-def index():
+@route('/nova_recomendacao')
+def nova_recomendacao():
     recomendacao = random.choice(recomendacoes)
     hash_recomendacao = md5(recomendacao).hexdigest()
     imagem_url = imagem()
     informacoes = info()
     return template('recomendacao', **locals())
+
+@route('/')
+def index():
+    return nova_recomendacao()
 
 @route('/recomendacao/<hash_recomendacao>')
 def recomendacao(hash_recomendacao):

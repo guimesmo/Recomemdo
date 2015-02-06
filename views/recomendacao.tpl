@@ -74,6 +74,9 @@
         <a href="/recomendacao/{{hash_recomendacao}}">[ Permalink ]</a>
         <br />
         <br />
+        Não gostou dessa? Veja <a href="/nova_recomendacao">aqui</a> outra "recomemdação".
+        <br />
+        <br />
         <div class="fb-share-button" data-href="http://recomendo.com.br/recomendacao/{{hash_recomendacao}}" data-layout="box_count"></div>
     </div>
     <div id="rodape">
