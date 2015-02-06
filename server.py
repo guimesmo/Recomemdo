@@ -1,11 +1,15 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+from __future__ import unicode_literals
 from bottle import route, run, template
-from hashlib import md5
 import random
+import json
+from utils import hasher
 
-recomendacoes = open('arquivos/recomendacoes.txt', 'r').readlines()
-recomendacoes_hash = {md5(x).hexdigest(): x for x in recomendacoes}
+
+recomendacoes_txt = open('arquivos/recomendacoes.txt', 'r').read()
+recomendacoes = json.loads(recomendacoes_txt)
+recomendacoes_hash = {hasher(x["descricao"]): x["descricao"] for x in recomendacoes}
 imagens = open('arquivos/imagens.txt', 'r').readlines()
 informacoes_extras = open('arquivos/informacoes_extras.txt', 'r').readlines()
 
@@ -20,7 +24,7 @@ def info():
 @route('/nova_recomendacao')
 def nova_recomendacao():
     recomendacao = random.choice(recomendacoes)
-    hash_recomendacao = md5(recomendacao).hexdigest()
+    hash_recomendacao = hasher(recomendacao["descricao"])
     imagem_url = imagem()
     informacoes = info()
     return template('recomendacao', **locals())

@@ -1,8 +1,42 @@
-Sempre leva apetrechos religiosos para o trabalho, benzendo cada commit e assegurando a sua funcionalidade perante o divino
-Com voz firme e sensual, consegue levar com malemolencia reuniões chatas, sempre sendo o favorito do scrum master
-Torcedor fanatico da Ponte Preta, é essencial tomar cuidado com carteiras e celulares soltos em mesas
-É um programador exemplar, consegue conviver com a ambiguidade mental de ser lógico e pragmatico no que se refere a desenvolvimento e totalmente alucinado em acreditar em entidades divinas
-Com profundo conhecimento no âmbito social, se utiliza de linhas ideológicas e seitivas gerando sempre um código ético e coerente
-Um amador da programação. Quase um programador amador. Ou programador de armação
-Exigente e aventureiro, não se cansa de investigar e solucionar problemas. Mesmo que ninguém saiba que existam. Ou mesmo não existam.
-Um verdadeiro desenvolvedor. Um grande produtor de código. Um excelente reorganizador. Um exímio reprodutor!
+[
+    {
+        "nome": "Joselito Nunes Gonçalves Junior e Silva",
+        "profissao": "Analista Desenvolvedor de Sistemas",
+        "descricao": "Sempre leva apetrechos religiosos para o trabalho, benzendo cada commit e assegurando a sua funcionalidade perante o divino"
+    },
+    {
+        "nome": "Rafael Alves dos Anjos e Santos da Costa",
+        "profissao": "Web Master Designer",
+        "descricao": "Com voz firme e sensual, consegue levar com malemolencia reuniões chatas, sempre sendo o favorito do scrum master"
+    },
+    {
+        "nome": "Lauberto de Souza e Sousa",
+        "profissao": "Gerente de Soluções Financeiras e Cognitivas",
+        "descricao": "Torcedor fanatico da Ponte Preta, é essencial tomar cuidado com carteiras e celulares soltos em mesas"
+    },
+    {
+        "nome": "Rodauberto Glacilino da Fonseca",
+        "profissao": "Programador Java Senior",
+        "descricao": "É um programador exemplar, consegue conviver com a ambiguidade mental de ser lógico e pragmatico no que se refere a desenvolvimento e totalmente alucinado em acreditar em entidades divinas"
+    },
+    {
+        "nome": "Eriosvaldo Aluguino de Manassés",
+        "profissao": "Implementador Front End",
+        "descricao": "Com profundo conhecimento no âmbito social, se utiliza de linhas ideológicas e seitivas gerando sempre um código ético e coerente"
+    },
+    {
+        "nome": "Caio Céu Companheiro",
+        "profissao": "Analista Programador PHP/Javascript",
+        "descricao": "Um amador da programação. Quase um programador amador. Ou programador de armação"
+    },
+    {
+        "nome": "Rivelino Volta Redonda do Passo Fundo",
+        "profissao": "Médico Proctologista",
+        "descricao": "Exigente e aventureiro, não se cansa de investigar e solucionar problemas. Mesmo que ninguém saiba que existam. Ou mesmo não existam."
+    },
+    {
+        "nome": "Carlos Henrique Portela e Tijuca",
+        "profissao": "Analista Pesenvolvedor Python",
+        "descricao": "Um verdadeiro desenvolvedor. Um grande produtor de código. Um excelente reorganizador. Um exímio reprodutor!"
+    }
+]
